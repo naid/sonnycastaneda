@@ -1,8 +1,10 @@
 {
-    "buildpacks": [
-      {
-        "url": "heroku/php"
-      }
-    ]
-  }
-  
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
