@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Sound Engineer | Sonny Castaneda</title>
+
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.min.css" rel="stylesheet">
+    <link href="css/bam_css.css" rel="stylesheet">
+
+    <!-- Page level plugin CSS-->
+    <link href="../plugins/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="../plugins/bootstrap-popover-x/css/bootstrap-popover-x.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<style>
+    /* Center the loader */
+    /* Absolute Center Spinner */
+    body {
+        background-color: #898989;
+    }
+
+    .loading {
+        position: fixed;
+        z-index: 999;
+        height: 6em;
+        width: 200px;
+        overflow: show;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* Transparent Overlay */
+    .loading:before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity:0.8;
+    }
+
+
+    .loading h1 {
+        margin: 0;
+        padding: 0;
+        font-family: ‘Arial Narrow’, sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #ffffff;
+    }
+
+    .loading span {
+        position: relative;
+        top: 0.63em;
+        display: inline-block;
+        text-transform: uppercase;
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+
+    .let1 {
+        animation: drop 1.2s ease-in-out 2;
+        animation-delay: 1.2s;
+    }
+
+    .let2 {
+        animation: drop 1.2s ease-in-out 2;
+        animation-delay: 1.3s;
+    }
+
+    .card-body {
+        width:1690px; margin:0 auto;
+    }
+
+    .header {
+        color: aliceblue;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+
+    @keyframes drop {
+        10% {
+            opacity: 0.5;
+        }
+        20% {
+            opacity: 1;
+            top: 3.78em;
+            transform: rotateX(-360deg);
+        }
+        80% {
+            opacity: 1;
+            top: 3.78em;
+            transform: rotateX(-360deg);
+        }
+        90% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 0;
+            top: 6.94em
+        }
+    }
+
+</style>
+
+<body onload="myFunction()">
+<div id="loading" class="loading">
+    <h1>
+        <span class="let1">SOUND</span>
+        <span class="let2">CHECK</span>
+    </h1>
+</div>
+<div id="wrapper">
+    <div id="content-wrapper">
+        <div class="container-fluid">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="header">
+                        <h1>SONNY CASTAÑEDA - SOUND ENGINEER</h1>
+                    </div>
+                    <hr></hr>
+                    <div class="main-pic">
+                        <img src="assets/images/sonny_main.jpg" alt="Sonny">
+                        <img src="assets/images/sonny_montage.jpg" alt="commence">
+                    </div>
+                    <hr></hr>
+                    <div class="header">
+                        <h2>::Projects::</h2>
+                    </div>
+                    <div class="main-pic">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/S8kK6CxzypY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/AOxZAjHpiZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/GiekEjenI1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Day08_iknCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wC6zSpfyKCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="card-footer small text-muted"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+    var myVar;
+
+    function myFunction() {
+        myVar = setTimeout(showPage, 4500);
+    }
+
+    function showPage() {
+        document.getElementById("loading").style.display = "none";
+
+    }
+</script>
+
+
+
+</body>
+</html>
